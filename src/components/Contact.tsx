@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect, useRef, FormEvent } from "react";
 import { Github, Linkedin, Mail, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";

@@ -1,3 +1,4 @@
+"use client";
 
 import { ArrowUp } from "lucide-react";
 
@@ -14,9 +15,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate text-sm mb-4 md:mb-0">
-            Designed & Built by Vivek G Sindagi &copy; {new Date().getFullYear()}
+            Designed & Built by Vivek G Sindagi &copy;{" "}
+            {new Date().getFullYear()}
           </p>
-          
+
           <div className="flex items-center">
             <button
               onClick={scrollToTop}

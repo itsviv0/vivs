@@ -1,3 +1,4 @@
+"use client";
 
 import { X, Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -61,7 +62,9 @@ const ProjectModal = ({ project, onClose, isOpen }: ProjectModalProps) => {
             />
           </div>
 
-          <h3 className="text-3xl font-bold text-white mb-3">{project.title}</h3>
+          <h3 className="text-3xl font-bold text-white mb-3">
+            {project.title}
+          </h3>
 
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tech.map((tech) => (

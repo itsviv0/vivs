@@ -1,3 +1,4 @@
+"use client";
 
 import { useEffect, useRef } from "react";
 
@@ -36,8 +37,11 @@ const ParticleBackground = () => {
     // Create particles
     const createParticles = () => {
       particles.current = [];
-      const particleCount = Math.min(Math.floor(window.innerWidth * 0.075), 150);
-      
+      const particleCount = Math.min(
+        Math.floor(window.innerWidth * 0.075),
+        150
+      );
+
       for (let i = 0; i < particleCount; i++) {
         particles.current.push({
           x: Math.random() * canvas.width,
@@ -55,45 +59,45 @@ const ParticleBackground = () => {
     // Draw and update
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       // Draw particles
       particles.current.forEach((particle, i) => {
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(100, 255, 218, ${particle.opacity})`;
         ctx.fill();
-        
+
         // Update position
         particle.x += particle.speedX;
         particle.y += particle.speedY;
-        
+
         // Bounce off edges
         if (particle.x > canvas.width || particle.x < 0) {
           particle.speedX = -particle.speedX;
         }
-        
+
         if (particle.y > canvas.height || particle.y < 0) {
           particle.speedY = -particle.speedY;
         }
       });
-      
+
       // Connect nearby particles with lines
       connectParticles(ctx);
-      
+
       animationFrameId.current = requestAnimationFrame(animate);
     };
 
     const connectParticles = (ctx: CanvasRenderingContext2D) => {
       const maxDistance = 150;
-      
+
       for (let i = 0; i < particles.current.length; i++) {
         for (let j = i; j < particles.current.length; j++) {
           const dx = particles.current[i].x - particles.current[j].x;
           const dy = particles.current[i].y - particles.current[j].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-          
+
           if (distance < maxDistance) {
-            const opacity = 1 - (distance / maxDistance);
+            const opacity = 1 - distance / maxDistance;
             ctx.beginPath();
             ctx.strokeStyle = `rgba(100, 255, 218, ${opacity * 0.2})`;
             ctx.lineWidth = 0.5;

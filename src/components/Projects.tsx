@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect, useRef } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import ProjectModal, { Project } from "./ProjectModal";
