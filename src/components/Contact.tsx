@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Mail, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -150,6 +150,22 @@ const Contact = () => {
                       GitHub
                     </h5>
                     <p className="text-slate text-sm">github.com/itsviv0</p>
+                  </div>
+                </a>
+                <a
+                  href="https://x.com/SindagiVivek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center border border-teal/30 group-hover:border-teal transition-colors">
+                    <X className="h-5 w-5 text-teal" />
+                  </div>
+                  <div className="ml-4">
+                    <h5 className="text-white group-hover:text-teal transition-colors">
+                      X
+                    </h5>
+                    <p className="text-slate text-sm">x.com/SindagiVivek</p>
                   </div>
                 </a>
               </div>
