@@ -50,8 +50,8 @@ const App = () => {
         <Experience />
         <Leadership />
         <Contact />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 };
