@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ParticleBackground from "@/components/ParticleBackground";
+import Leadership from "@/components/Leadership";
 
 const App = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const App = () => {
         <About />
         <Projects />
         <Experience />
+        <Leadership />
         <Contact />
       </main>
       <Footer />
