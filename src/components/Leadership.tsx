@@ -29,7 +29,11 @@ const Leadership = () => {
   }, []);
 
   return (
-    <section id="leadership" ref={sectionRef} className="py-20 relative">
+    <section
+      id="leadership"
+      ref={sectionRef}
+      className="container py-20 relative"
+    >
       <div
         className={`mt-16 text-center transition-all duration-700 ease-out delay-500 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -40,8 +44,8 @@ const Leadership = () => {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
           <div className="flip-card h-64">
-            <div className="flip-card-inner rounded-lg shadow-lg overflow-hidden">
-              <div className="flip-card-front bg-navy-light p-6 flex flex-col items-center justify-center text-center">
+            <div className="flip-card-inner rounded-lg shadow-lg">
+              <div className="flip-card-front bg-navy-light p-6">
                 <h4 className="text-lg font-bold text-white mb-2">
                   Joint Secretary
                 </h4>
@@ -57,8 +61,8 @@ const Leadership = () => {
           </div>
 
           <div className="flip-card h-64">
-            <div className="flip-card-inner rounded-lg shadow-lg overflow-hidden">
-              <div className="flip-card-front bg-navy-light p-6 flex flex-col items-center justify-center text-center">
+            <div className="flip-card-inner rounded-lg shadow-lg">
+              <div className="flip-card-front bg-navy-light p-6">
                 <h4 className="text-lg font-bold text-white mb-2">
                   Senior Graphic Designer
                 </h4>
@@ -74,8 +78,8 @@ const Leadership = () => {
           </div>
 
           <div className="flip-card h-64">
-            <div className="flip-card-inner rounded-lg shadow-lg overflow-hidden">
-              <div className="flip-card-front bg-navy-light p-6 flex flex-col items-center justify-center text-center">
+            <div className="flip-card-inner rounded-lg shadow-lg">
+              <div className="flip-card-front bg-navy-light p-6">
                 <h4 className="text-lg font-bold text-white mb-2">
                   Hackathon Organizer
                 </h4>
