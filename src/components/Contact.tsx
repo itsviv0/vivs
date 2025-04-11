@@ -7,13 +7,6 @@ import { useToast } from "@/hooks/use-toast";
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,28 +34,6 @@ const Contact = () => {
     };
   }, []);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1500);
-  };
-
   return (
     <section id="contact" ref={sectionRef} className="py-24 relative">
       <div className="container mx-auto px-4">
@@ -80,9 +51,9 @@ const Contact = () => {
               Get In Touch
             </h3>
             <p className="text-slate max-w-2xl mx-auto">
-              I'm currently open to new opportunities and collaborations.
-              Whether you have a question or just want to say hi, I'll do my
-              best to get back to you!
+              I&apos;m currently open to new opportunities and collaborations.
+              Whether you have a question or just want to say hi, I&apos;ll do
+              my best to get back to you!
             </p>
           </div>
 
@@ -95,7 +66,7 @@ const Contact = () => {
           >
             <div className="bg-navy-light rounded-lg p-6 border border-teal/20 h-full flex flex-col">
               <h4 className="text-xl font-bold text-white mb-6">
-                Let's Connect
+                Let&apos;s Connect
               </h4>
 
               <p className="text-slate mb-8">
