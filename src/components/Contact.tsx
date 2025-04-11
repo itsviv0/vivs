@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef, FormEvent } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Github, Linkedin, Mail, X } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
