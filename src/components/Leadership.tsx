@@ -48,14 +48,14 @@ const Leadership = () => {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
           <div className="flip-card h-64">
-            <div className="flip-card-inner rounded-lg shadow-lg">
-              <div className="flip-card-front bg-navy-light p-6">
+            <div className="flip-card-inner shadow-lg">
+              <div className="flip-card-front rounded-lg bg-navy-light p-6">
                 <h4 className="text-lg font-bold text-white mb-2">
                   Joint Secretary
                 </h4>
                 <p className="text-teal">IEEE BMSCE</p>
               </div>
-              <div className="flip-card-back bg-teal/10 border border-teal/30 p-6 flex flex-col items-center justify-center text-center">
+              <div className="flip-card-back rounded-lg bg-teal/10 border border-teal/30 p-6 flex flex-col items-center justify-center text-center">
                 <p className="text-slate">
                   Led technology workshops and events, fostering a community of
                   technical excellence and innovation.
@@ -65,14 +65,14 @@ const Leadership = () => {
           </div>
 
           <div className="flip-card h-64">
-            <div className="flip-card-inner rounded-lg shadow-lg">
-              <div className="flip-card-front bg-navy-light p-6">
+            <div className="flip-card-inner shadow-lg">
+              <div className="flip-card-front rounded-lg bg-navy-light p-6">
                 <h4 className="text-lg font-bold text-white mb-2">
                   Senior Graphic Designer
                 </h4>
                 <p className="text-teal">UTSAV PHASESHIFT</p>
               </div>
-              <div className="flip-card-back bg-teal/10 border border-teal/30 p-6 flex flex-col items-center justify-center text-center">
+              <div className="flip-card-back rounded-lg bg-teal/10 border border-teal/30 p-6 flex flex-col items-center justify-center text-center">
                 <p className="text-slate">
                   Created compelling visual content for college festival,
                   enhancing brand recognition and attendee engagement.
@@ -82,16 +82,16 @@ const Leadership = () => {
           </div>
 
           <div className="flip-card h-64">
-            <div className="flip-card-inner rounded-lg shadow-lg">
-              <div className="flip-card-front bg-navy-light p-6">
+            <div className="flip-card-inner shadow-lg">
+              <div className="flip-card-front rounded-lg bg-navy-light p-6">
                 <h4 className="text-lg font-bold text-white mb-2">
                   Hackathon Organizer
                 </h4>
                 <p className="text-teal">ICHack 1.0</p>
               </div>
-              <div className="flip-card-back bg-teal/10 border border-teal/30 p-6 flex flex-col items-center justify-center text-center">
+              <div className="flip-card-back rounded-lg bg-teal/10 border border-teal/30 p-6 flex flex-col items-center justify-center text-center">
                 <p className="text-slate">
-                  Orchestrated a successful 24-hour hackathon with 200+
+                  Orchestrated a successful 48-hour hackathon with 200+
                   participants, securing sponsorships and managing logistics.
                 </p>
               </div>
