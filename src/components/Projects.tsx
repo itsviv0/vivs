@@ -58,6 +58,7 @@ const Projects = () => {
         "https://images.unsplash.com/photo-1534939118136-e6f032db3c33?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tech: ["Next.js", "TypeScript", "Tailwind"],
       github: "https://github.com/itsviv0/castura",
+      demo: "https://castura.vivs.live",
       problem:
         "Existing screen recording tools are paid to offer these functionalities and work on subscription models.",
       solution:
@@ -104,6 +105,7 @@ const Projects = () => {
         "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=2366&auto=format&fit=crop",
       tech: ["Next.js", "TypeScript", "Tailwind"],
       github: "https://github.com/itsviv0/textdiff",
+      demo: "https://textdiff.vivs.live",
       problem:
         "Existing text comparison tools are filled with ADs and provide limited options in the free version.",
       solution:
