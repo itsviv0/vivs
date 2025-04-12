@@ -1,19 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef, FormEvent } from "react";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { useState, useEffect, useRef } from "react";
+import { Github, Linkedin, Mail, X } from "lucide-react";
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,38 +18,20 @@ const Contact = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    // Store the current value in a variable
+    const currentRef = sectionRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      // Use the stored variable in the cleanup
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1500);
-  };
 
   return (
     <section id="contact" ref={sectionRef} className="py-24 relative">
@@ -76,9 +50,9 @@ const Contact = () => {
               Get In Touch
             </h3>
             <p className="text-slate max-w-2xl mx-auto">
-              I'm currently open to new opportunities and collaborations.
-              Whether you have a question or just want to say hi, I'll do my
-              best to get back to you!
+              I&apos;m currently open to new opportunities and collaborations.
+              Whether you have a question or just want to say hi, I&apos;ll do
+              my best to get back to you!
             </p>
           </div>
 
@@ -91,7 +65,7 @@ const Contact = () => {
           >
             <div className="bg-navy-light rounded-lg p-6 border border-teal/20 h-full flex flex-col">
               <h4 className="text-xl font-bold text-white mb-6">
-                Let's Connect
+                Let&apos;s Connect
               </h4>
 
               <p className="text-slate mb-8">
@@ -150,6 +124,22 @@ const Contact = () => {
                       GitHub
                     </h5>
                     <p className="text-slate text-sm">github.com/itsviv0</p>
+                  </div>
+                </a>
+                <a
+                  href="https://x.com/SindagiVivek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center border border-teal/30 group-hover:border-teal transition-colors">
+                    <X className="h-5 w-5 text-teal" />
+                  </div>
+                  <div className="ml-4">
+                    <h5 className="text-white group-hover:text-teal transition-colors">
+                      X
+                    </h5>
+                    <p className="text-slate text-sm">x.com/SindagiVivek</p>
                   </div>
                 </a>
               </div>

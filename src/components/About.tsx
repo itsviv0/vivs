@@ -18,13 +18,17 @@ const About = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    // Store the current value in a variable
+    const currentRef = sectionRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      // Use the stored variable in the cleanup
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -85,13 +89,14 @@ const About = () => {
             }`}
           >
             <p className="text-lg mb-6">
-              Hello! I'm Vivek, a software engineer and data engineer passionate
-              about building exceptional digital experiences. My journey in tech
-              began during my college years, where I began development.
+              Hello! I&apos;m Vivek, a software engineer and data engineer
+              passionate about building exceptional digital experiences. My
+              journey in tech began during my college years, where I began
+              development.
             </p>
             <p className="text-lg mb-6">
               I specialize in developing scalable applications with clean,
-              maintainable code. Whether it's crafting intuitive user
+              maintainable code. Whether it&apos;s crafting intuitive user
               interfaces, building robust backends, or designing data pipelines,
               I enjoy the entire process of bringing ideas to life.
             </p>

@@ -61,7 +61,7 @@ const ParticleBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw particles
-      particles.current.forEach((particle, i) => {
+      particles.current.forEach((particle) => {
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(100, 255, 218, ${particle.opacity})`;

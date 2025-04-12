@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-8 bg-navy-dark">
+    <footer className="py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate text-sm mb-4 md:mb-0">
