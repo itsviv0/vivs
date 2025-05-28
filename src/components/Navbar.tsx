@@ -95,7 +95,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivekgsindagi.pdf?alt=media&token=ad50b1dc-af4f-45ec-bbf0-a180ada4d54f"
+            href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivek_g_sindagi.pdf?alt=media&token=0f83fba9-f5ac-4740-a13e-5e4e7ea63e84"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 border border-teal text-teal px-6 py-3 rounded hover:bg-teal/10 transition-all duration-300"
