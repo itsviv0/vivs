@@ -69,19 +69,16 @@ const Navbar = () => {
           className="md:hidden text-teal"
           onClick={toggleMenu}
         >
-          {isMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
+          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </Button>
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`fixed inset-0 bg-navy-dark bg-opacity-95 z-40 flex-col items-center justify-center transition-all duration-300 ${
+      <div 
+        className={`fixed inset-0 bg-navy-dark bg-opacity-95 z-40 flex-col items-center justify-center pt-16 transition-all duration-300 overflow-auto ${
           isMenuOpen ? "flex md:hidden" : "hidden"
         }`}
+        style={{ top: "0", height: "100vh" }}
       >
         <nav className="flex flex-col items-center space-y-6 p-8">
           {navLinks.map((link, index) => (
