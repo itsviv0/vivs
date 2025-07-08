@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
 
           <a
-            href="#projects"
+            href="/project"
             className={`transition-all duration-700 ease-out inline-block border-2 border-teal text-teal px-8 py-4 rounded font-space font-medium text-lg hover:bg-teal/10 ${
               isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
@@ -69,7 +69,7 @@ const Hero = () => {
 
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
         <a
-          href="#about"
+          href="/about"
           className="block text-teal hover:text-white transition-colors"
         >
           <ChevronDown size={32} />

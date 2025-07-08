@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
+    { name: "Projects", href: "/project" },
     { name: "Experience", href: "#experience" },
     { name: "Leadership", href: "#leadership" },
     { name: "Contact", href: "#contact" },
@@ -35,7 +35,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="text-xl font-space font-bold text-white">
+        <a href="/" className="text-xl font-space font-bold text-white">
           <span className="text-teal">V</span>ivek{" "}
           <span className="text-teal">S</span>indagi
         </a>
