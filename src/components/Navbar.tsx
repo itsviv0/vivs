@@ -53,7 +53,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivek_g_sindagi.pdf?alt=media&token=0f83fba9-f5ac-4740-a13e-5e4e7ea63e84"
+            href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivek_g_sindagi.pdf?alt=media&token=0023178d-b4b5-408e-96da-af7fda397838"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-teal text-teal px-4 py-2 rounded hover:bg-teal/10 transition-all duration-300 text-sm"
@@ -92,7 +92,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivek_g_sindagi.pdf?alt=media&token=0f83fba9-f5ac-4740-a13e-5e4e7ea63e84"
+            href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivek_g_sindagi.pdf?alt=media&token=0023178d-b4b5-408e-96da-af7fda397838"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 border border-teal text-teal px-6 py-3 rounded hover:bg-teal/10 transition-all duration-300"
