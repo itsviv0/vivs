@@ -14,7 +14,7 @@ const ProjectsPage = () => {
         <div className="container mx-auto px-4 pt-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">My Projects</h1>
           <p className="text-slate text-lg max-w-2xl">
-            A collection of my personal and professional projects. Check out what I'm currently building 
+            A collection of my personal and professional projects. Check out what I&apos;m currently building 
             and some of my completed work.
           </p>
         </div>

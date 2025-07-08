@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,22 +36,22 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" className="text-xl font-space font-bold text-white">
+        <Link href="/" className="text-xl font-space font-bold text-white">
           <span className="text-teal">V</span>ivek{" "}
           <span className="text-teal">S</span>indagi
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link, index) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className="nav-link group text-sm"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <span className="text-teal mr-1">0{index + 1}.</span> {link.name}
-            </a>
+            </Link>
           ))}
           <a
             href="https://firebasestorage.googleapis.com/v0/b/itsviv0.appspot.com/o/vivek_g_sindagi.pdf?alt=media&token=0023178d-b4b5-408e-96da-af7fda397838"
